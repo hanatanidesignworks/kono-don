@@ -1,0 +1,176 @@
+/*HEADER*/
+.header_container{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+
+    .header_inner_container{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        /*LOGO*/
+        .header_inner_logo_container{
+            width: auto;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+            .header_inner_logo_container img{
+                width: auto;
+                height: 40px;
+            }
+
+        /*NAVIGATION MENU*/
+        nav button{
+            padding: 0;
+            outline: none;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+
+            .buttonBar{
+                content: "";
+                display: block;
+                width: 35px;
+                height: 3px;
+                background-color: #343434;
+                grid-area: 1 / 1;
+                transition: transform 0.5s;
+
+            }
+
+        button::before, button::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #343434;
+            grid-area: 1 / 1;
+            transition: transform 0.5s;
+        }
+
+        button::before{
+            transform: translateY(-12px);
+        }
+
+        button::after{
+            transform: translateY(12px);
+        }
+
+        .navigation_menu_container{
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: transform 0.5s;
+            display: grid;
+            place-items: center;
+        }
+
+            .navigation_menu_container ul{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+                .navigation_menu_container ul li{
+                    font-family: "Noto Serif JP", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 16px;
+                    color: #ffffff;
+                    text-align: center;
+                }
+
+/*OPEN CLASS*/
+.open{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .open .header_container .buttonBar{
+        transform: scale(0);
+    }
+
+    .open button::before{
+        transform: translateY(0) rotate(45deg);
+        z-index: 1000;
+    }
+
+    .open button::after{
+        transform: translateY(0) rotate(-45deg);
+        z-index: 1000;
+    }
+
+    .open .navigation_menu_container{
+        transform: translate(-100%, 0);
+    }
+
+@media(min-width: 768px){
+    .header_inner_container nav button{
+        display: none;
+    }
+
+    .navigation_menu_container{
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .navigation_menu_container ul li{
+        color: #343434;
+    }
+
+    .navigation_menu_container ul{
+        flex-direction: row;
+    }
+}
+
+/*FOOTER*/
+.footer_container{
+    width: 100%;
+    height: 50px;
+    background-color: #ffdd88;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+    .footer_container p{
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #343434;
+    }
+
+    @media(max-width: 350px){
+        .footer_container p{
+            font-size: 14px;
+        }
+    }
