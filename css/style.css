@@ -8,6 +8,7 @@
 
 .firstView__container{
     width: 100%;
+    max-width: 1280px;
     height: 600px;
     background-image: url(../img/firstview_image_konodon_for_smartphon_w768_h600_ver2-02.png);
     background-size: cover;
@@ -80,6 +81,42 @@
                 font-size: 16px;
                 line-height: 1.3rem;
             }
+
+/*DESKTOP --FIRSTVIEW--*/
+@media(min-width: 768px){
+    .firstView__container__text__description p{
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+
+    .firstView__container__text__description h2{
+        font-size: 24px;
+    }
+
+    .firstView__container__text__description{
+        top: 350px;
+    }
+
+    .textLarge{
+        font-size: 48px;
+    }
+
+    .firstView__container__text h1{
+        font-size: 32px;
+        width: 32rem;
+        line-height: 3rem;
+    }
+
+    .firstView__container__text{
+        width: 768px;
+        height: 550px;
+    }    
+
+    .firstView__container{
+        background-image: url(../img/firstview_image_konodon_w1280_h600.png);
+        height: 550px;
+    }   
+}
 /*FIRSTVIEW END*/
 
 /*SHOPLIST START*/
@@ -92,24 +129,41 @@
 
 .shopList__container{
     width: 350px;
+    max-width: 1280px;
     height: auto;
 }
 
     .shopList__container__inner{
         width: 100%;
-        height: 120px;
+        height: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
 
-        .shopList__container__inner__shop{
+        .shopList__container__inner__flame{
             width: 110px;
-            height: 110px;
-            background-size: cover;
-            background-position: center;
+            height: 130px;
+            background-color: #FEEEED;
         }
+
+            .shopList__container__inner__shop{
+                width: 110px;
+                height: 110px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .shopList__container__inner__flame p{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                color: #343434;
+                text-align: center;
+            }
         
         /*FIRST ROW*/
         .firstRow__left{
@@ -117,11 +171,50 @@
         }
 
         .firstRow__center{
-            background-image: url(../img/himari_w200_h200.jpg);
+            background-image: url(../img/himari_w240_h240.jpg);
         }
 
         .firstRow__right{
-            background-image: url(../img/bikotsu_w200_h200.jpg);
+            background-image: url(../img/bikotsu_w240_h240.jpg);
         }
+
+        /*SECOND ROW*/
+        .secondRow__left{
+            background-image: url(../img/popo_w240_h240.jpg);
+        }
+
+        .secondRow__center{
+            background-image: url(../img/hakoniwa_w240_h240.jpg);
+        }
+
+        .secondRow__right{
+            background-image: url(../img/kamosu_w240_h240.jpg);
+        }
+
+/*DESKTOP --SHOPLIST--*/
+@media(min-width: 768px){
+    .shopList__container__inner__shop{
+        width: 240px;
+        height: 240px;
+    }
+
+    .shopList__container__inner__flame p{
+        margin-top:5px;
+    }
+
+    .shopList__container__inner__flame{
+        height: 270px;
+        width: 240px;
+    }
+
+    .shopList__container__inner{
+        height: 280px;
+        gap: 8px;
+    }
+
+    .shopList__container{
+        width: 768px;
+    }
+}
 
 /*SHOPLIST END*/
