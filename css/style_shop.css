@@ -1,0 +1,251 @@
+/*FIRSTVIEW START*/
+.firstView{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.firstView__container{
+    width: 350px;
+    height: 550px;
+}
+
+    /*SHOPLIST START*/
+        .shopList__container__inner{
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fifthRow{
+            height: 60px;
+        }
+
+            .fifthRow h2{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 1.3rem;
+                text-align: center;
+                width: 18rem;
+            }
+
+            .shopList__container__inner__flame{
+                width: 110px;
+                height: 110px;
+                background-color: #fcfcfc;
+            }
+
+                .shopList__container__inner__shop{
+                    width: 110px;
+                    height: 110px;
+                    background-size: cover;
+                    background-position: center;
+                }
+            
+            /*FIRST ROW*/
+            .firstRow__left{
+                background-image: url(../img/kamosu_w240_h240.jpg);
+            }
+
+            .firstRow__center{
+                background-image: url(../img/himari_w240_h240.jpg);
+            }
+
+            .firstRow__right{
+                background-image: url(../img/bikotsu_w240_h240.jpg);
+            }
+
+            /*SECOND ROW*/
+            .secondRow__left{
+                background-image: url(../img/popo_w240_h240.jpg);
+            }
+
+            .secondRow__center{
+                display: grid;
+                place-items: center;
+                border: solid 0.5px #343434;
+            }
+
+            .secondRow__center h1{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 2rem;
+            }
+
+            .secondRow__right{
+                background-image: url(../img/hakoniwa_w240_h240.jpg);
+            }
+
+            /*THIRD ROW*/
+            .thirdRow__left{
+                background-image: url(../img/tenno_w240_h240.jpg);
+            }
+
+            .thirdRow__center{
+                background-image: url(../img/liberta_w240_h240.jpg);
+            }
+
+            .thirdRow__right{
+                background-image: url(../img/okoto_w240_h240.jpg);
+            }
+
+            /*FORTH ROW*/
+            .forthRow__left{
+                background-image: url(../img/enlace_w240_h240.jpg);
+            }
+
+            .forthRow__center{
+                background-image: url(../img/sleep_w240_h240.jpg);
+            }
+
+            .forthRow__right{
+                background-image: url(../img/mano_w240_h240.jpg);
+            }
+
+    /*DESKTOP --SHOPLIST--
+    @media(min-width: 768px){
+        .shopList__container__inner__shop{
+            width: 240px;
+            height: 240px;
+        }
+
+        .shopList__container__inner__flame p{
+            margin-top:5px;
+        }
+
+        .shopList__container__inner__flame{
+            height: 270px;
+            width: 240px;
+        }
+
+        .shopList__container__inner{
+            height: 280px;
+            gap: 8px;
+        }
+
+        .shopList__container{
+            width: 768px;
+        }
+    }*/
+
+    /*SHOPLIST END*/
+
+/*INFORMATION START*/
+.information{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.information__container{
+    width: 350px;
+    height: auto;
+}
+
+    .information__container__heading{
+        width: 100%;
+        height: 40px;
+        display: grid;
+        place-items: center;
+    }
+
+        .information__container__heading h2{
+            font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            border-bottom: solid 5px #FADBDA;
+            width: 100%;
+        }
+    
+    .information__container__contents{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+    }
+
+        .information__container__contents__label{
+            width: 100px;
+            height: auto;
+            border-bottom: dashed 0.5px #d9d9d9;
+        }
+
+            .information__container__contents__label p, .information__container__contents__overview p{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+            }
+
+        .information__container__contents__overview{
+            width: 250px;
+            height: auto;
+            border-bottom: dashed 0.5px #d9d9d9;
+        }
+/*INFORMATION END*/
+
+/*RECOMMEND START*/
+.recommend{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.recommend__container{
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+}
+
+    .recommend__container__heading{
+        width: 100%;
+        height: 40px;
+        display: grid;
+        place-items: center;
+    }
+
+        .recommend__container__heading h2{
+            font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            border-bottom: solid 5px #FADBDA;
+            width: 100%;
+        }
+
+    .recommend__container__contents{
+        width: 100%;
+        height: auto;
+    }
+
+        .recommend__container__contents p{
+            font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin-top: 10px;
+            line-height: 2rem;
+        }
+
+            .recommend__text__large{
+                font-size: 24px;
+                font-weight: 700;
+            }
+/*RECOMMEND END*/

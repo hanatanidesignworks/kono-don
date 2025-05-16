@@ -191,6 +191,32 @@
             background-image: url(../img/kamosu_w240_h240.jpg);
         }
 
+        /*THIRD ROW*/
+        .thirdRow__left{
+            background-image: url(../img/tenno_w240_h240.jpg);
+        }
+
+        .thirdRow__center{
+            background-image: url(../img/liberta_w240_h240.jpg);
+        }
+
+        .thirdRow__right{
+            background-image: url(../img/okoto_w240_h240.jpg);
+        }
+
+        /*FORTH ROW*/
+        .forthRow__left{
+            background-image: url(../img/enlace_w240_h240.jpg);
+        }
+
+        .forthRow__center{
+            background-image: url(../img/sleep_w240_h240.jpg);
+        }
+
+        .forthRow__right{
+            background-image: url(../img/mano_w240_h240.jpg);
+        }
+
 /*DESKTOP --SHOPLIST--*/
 @media(min-width: 768px){
     .shopList__container__inner__shop{
