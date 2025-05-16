@@ -113,11 +113,13 @@
     .open button::before{
         transform: translateY(0) rotate(45deg);
         z-index: 1000;
+        background-color: #ffffff;
     }
 
     .open button::after{
         transform: translateY(0) rotate(-45deg);
         z-index: 1000;
+        background-color: #ffffff;
     }
 
     .open .navigation_menu_container{

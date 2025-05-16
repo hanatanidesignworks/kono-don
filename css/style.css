@@ -135,35 +135,71 @@
 
     .shopList__container__inner{
         width: 100%;
-        height: 140px;
+        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
 
-        .shopList__container__inner__flame{
+        .shopList__container__inner__shop{
             width: 110px;
-            height: 130px;
-            background-color: #FEEEED;
+            height: 110px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+            position: relative;
         }
 
-            .shopList__container__inner__shop{
-                width: 110px;
-                height: 110px;
-                background-size: cover;
-                background-position: center;
-            }
-
-            .shopList__container__inner__flame p{
+            .shopList__container__inner__shop .shopList__label, .shopList__container__inner__shop .shopList__category{
                 font-family: "Noto Sans JP", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 400;
                 font-style: normal;
                 font-size: 14px;
-                color: #343434;
-                text-align: center;
+                background-color: #ff0000;
+                color: #ffffff;
+                display: inline-block;
+                position: absolute;
+                right: -5px;
+                top: 5px;
             }
+
+            .shopList__container__inner__shop .shopList__category{
+                top: 90px;
+                color: #343434;
+                background-color: #d9d9d9;
+                width: 80px;
+                left: -5px;
+            }
+
+            .shopList__container__inner__shop .category__uranai{
+                width: 50px;
+                background-color: #96DDE3;
+            }
+
+            .shopList__container__inner__shop .category__sejutsu{
+                width: 50px;
+                background-color: #EE87B4;
+            }
+
+            .shopList__container__inner__shop .category__shoku{
+                width: 70px;
+                background-color: #D8E698;
+            }
+
+            .shopList__container__inner__shop .category__akuse{
+                width: 100px;
+                background-color: #FFF67F;
+            }
+
+        .shopList__container__inner a:hover{
+            cursor: pointer;
+        }
+
+        .shopList__container__inner a:hover .shopList__container__inner__shop{
+            box-shadow: none
+        }
         
         /*FIRST ROW*/
         .firstRow__left{
