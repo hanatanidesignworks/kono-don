@@ -161,35 +161,35 @@
                 color: #ffffff;
                 display: inline-block;
                 position: absolute;
-                right: -5px;
                 top: 5px;
+            }
+
+            .shopList__container__inner__shop .shopList__label{
+                right: -5px;
             }
 
             .shopList__container__inner__shop .shopList__category{
                 top: 90px;
                 color: #343434;
                 background-color: #d9d9d9;
-                width: 80px;
                 left: -5px;
+                padding-left: 5px;
+                padding-right: 5px;
             }
 
             .shopList__container__inner__shop .category__uranai{
-                width: 50px;
                 background-color: #96DDE3;
             }
 
             .shopList__container__inner__shop .category__sejutsu{
-                width: 50px;
                 background-color: #EE87B4;
             }
 
             .shopList__container__inner__shop .category__shoku{
-                width: 70px;
                 background-color: #D8E698;
             }
 
             .shopList__container__inner__shop .category__akuse{
-                width: 100px;
                 background-color: #FFF67F;
             }
 
@@ -255,6 +255,14 @@
 
 /*DESKTOP --SHOPLIST--*/
 @media(min-width: 768px){
+    .shopList__container__inner__shop .shopList__label, .shopList__container__inner__shop .shopList__category{
+        font-size: 20px;
+    }
+
+    .shopList__container__inner__shop .shopList__category{
+        top: 200px;
+    }
+
     .shopList__container__inner__shop{
         width: 240px;
         height: 240px;
