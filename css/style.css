@@ -332,3 +332,120 @@
 }
 
 /*SHOPLIST END*/
+
+/*HOW TO USE START*/
+.howToUse{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.howToUse__container{
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+}
+
+    .howToUse__container__heading{
+        width: 100%;
+        height: 50px;
+    }
+
+        .howToUse__container__heading h2{
+            font-family: "M PLUS 1", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            display: inline-block;
+            background-color: #343434;
+            color: #fcfcfc;
+            padding: 10px;
+        }
+
+    .howToUse__container__inner{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .howToUse__container__inner__step{
+            width: 300px;
+            height: 200px;
+            border: solid 1px #343434;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+        }
+
+            .howToUse__container__inner__step__title{
+                width: 100%;
+                height: 30px;
+            }
+
+                .howToUse__container__inner__step__title h3{
+                    font-family: "M PLUS 1", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 20px;
+                }
+
+                .howToUse__large{
+                    font-size: 24px;
+                }
+
+            .howToUse__container__inner__step__image{
+                width: 100%;
+                height: 170px;
+                display: grid;
+                place-items: center;
+            }
+
+                .howToUse__container__inner__step__image img{
+                    width: 250px;
+                    height: 166px;                    
+                }
+
+        .howToUse__container__inner__triangle{   
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid #F5B2AC;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            
+@media(min-width: 768px){
+    .howToUse__container__inner__triangle{
+        margin: 0;
+        border-top: 10px solid transparent;
+        border-bottom:  10px solid transparent;
+        border-left: 20px solid #F5B2AC;
+        border-right: 0;
+    }
+
+    .howToUse__container__inner__step__image img{
+        width: 230px;
+        height: auto;
+    }
+
+    .howToUse__container__inner__step{
+        width: 250px;
+    }
+
+    .howToUse__container__inner{
+        flex-direction: row;
+    }
+
+    .howToUse__container{
+        width: 768px;
+    }
+}
+
+
+/*HOW TO USE END*/
