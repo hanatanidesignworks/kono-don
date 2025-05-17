@@ -9,6 +9,7 @@
 
     .header_inner_container{
         width: 100%;
+        max-width: 768px;
         height: 40px;
         display: flex;
         justify-content: space-between;
@@ -90,8 +91,7 @@
             }
 
                 .navigation_menu_container ul li{
-                    font-family: "Noto Serif JP", serif;
-                    font-optical-sizing: auto;
+                    font-family: "Zen Maru Gothic", serif;
                     font-weight: 400;
                     font-style: normal;
                     font-size: 16px;

@@ -8,9 +8,8 @@
 
 .firstView__container{
     width: 100%;
-    max-width: 1280px;
-    height: 600px;
-    background-image: url(../img/firstview_image_konodon_for_smartphon_w768_h600_ver2-02.png);
+    height: 650px;
+    background-image: url(../img/toppage_back_SP_w768_h650.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -19,38 +18,52 @@
 
     .firstView__container__text{
         width: 350px;
-        height: 600px;
+        height: 650px;
         position: relative;
     }
 
         .firstView__container__text h1{
-            font-family: "Kaisei Decol", serif;
+            font-family: "M PLUS 1", sans-serif;
+            font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
-            font-size: 20px;
-            width: 19rem;
-            line-height: 2rem;
+            font-size: 28px;
+            line-height: 2.5rem;
+            letter-spacing: 0.2rem;
             position: absolute;
-            top: 20px;
+            top: 70px;
+            left: 10px;
             color: #343434;
             text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
         }
 
-            .textRed{
-                color: #e4007f;
-            }
+        .firstView__textSmall{
+            font-size: 20px;
+        }
 
-            .textLarge{
-                font-size: 28px;
-            }
+        .firstView__textMiddle{
+            font-size: 36px;
+        }
+
+        .firstView__textLarge{
+            font-size: 44px;
+        }
+
+        .firstView__textExSmall{
+            font-size: 20px;
+        }
 
         .firstView__container__text__ctaBtn{
-            background-color: #009944;
-            display: inline-block;
-            padding: 10px;
-            border-radius: 10px;
+            width: 350px;
+            height: 40px;
             position: absolute;
-            top: 230px;
+            top: 415px;
+            background-image: url(../img/btn_w649_h73.png);
+            background-size: contain;
+        }
+
+        .firstView__container__text a:hover .firstView__container__text__ctaBtn{
+            background-image: url(../img/btn_hover_w649_h73.png);
         }
 
             .firstView__container__text__ctaBtn p{
@@ -64,7 +77,7 @@
 
         .firstView__container__text__description{
             position: absolute;
-            top: 400px;
+            top: 480px;
         }
 
             .firstView__container__text__description h2, .firstView__container__text__description p{
@@ -85,26 +98,44 @@
 /*DESKTOP --FIRSTVIEW--*/
 @media(min-width: 768px){
     .firstView__container__text__description p{
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.5rem;
     }
 
     .firstView__container__text__description h2{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .firstView__container__text__description{
-        top: 350px;
+        top: 430px;
     }
 
-    .textLarge{
-        font-size: 48px;
+    .firstView__container__text__ctaBtn{
+        top: 365px;
+    }
+
+    .firstView__textLarge{
+        font-size: 64px;
+    }
+
+    .firstView__textMiddle{
+        font-size: 56px;
+    }
+
+    .firstView__textSmall{
+        font-size: 32px;
+    }
+
+    .firstView__textExSmall{
+        font-size: 28px;
     }
 
     .firstView__container__text h1{
-        font-size: 32px;
+        font-size: 40px;
         width: 32rem;
-        line-height: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.3rem;
+        top: 130px;
     }
 
     .firstView__container__text{
@@ -113,7 +144,7 @@
     }    
 
     .firstView__container{
-        background-image: url(../img/firstview_image_konodon_w1280_h600.png);
+        background-image: url(../img/toppage_back_PC_w1280_h550.jpg);
         height: 550px;
     }   
 }
@@ -131,6 +162,7 @@
     width: 350px;
     max-width: 1280px;
     height: auto;
+    margin-top: 50px;
 }
 
     .shopList__container__inner{
