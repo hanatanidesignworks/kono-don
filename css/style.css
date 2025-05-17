@@ -37,6 +37,14 @@
             text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
         }
 
+        .firstView__container__text img{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 460px;
+            left: 220px;
+        }
+
         .firstView__textSmall{
             font-size: 20px;
         }
@@ -136,6 +144,10 @@
         line-height: 3.5rem;
         letter-spacing: 0.3rem;
         top: 130px;
+    }
+
+    .firstView__container__text img{
+        top: 405px;
     }
 
     .firstView__container__text{
