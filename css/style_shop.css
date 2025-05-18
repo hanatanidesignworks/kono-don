@@ -52,70 +52,6 @@
                     background-size: cover;
                     background-position: center;
                 }
-            
-            /*FIRST ROW*/
-            .firstRow__left{
-                background-image: url(../img/kamosu_w240_h240.jpg);
-            }
-
-            .firstRow__center{
-                background-image: url(../img/himari_w240_h240.jpg);
-            }
-
-            .firstRow__right{
-                background-image: url(../img/bikotsu_w240_h240.jpg);
-            }
-
-            /*SECOND ROW*/
-            .secondRow__left{
-                background-image: url(../img/popo_w240_h240.jpg);
-            }
-
-            .secondRow__center{
-                display: grid;
-                place-items: center;
-                border: solid 0.5px #343434;
-            }
-
-                .secondRow__center h1{
-                    font-family: "Noto Sans JP", sans-serif;
-                    font-optical-sizing: auto;
-                    font-weight: 700;
-                    font-style: normal;
-                    font-size: 24px;
-                    line-height: 2rem;
-                }
-
-            .secondRow__right{
-                background-image: url(../img/hakoniwa_w240_h240.jpg);
-            }
-
-            /*THIRD ROW*/
-            .thirdRow__left{
-                background-image: url(../img/tenno_w240_h240.jpg);
-            }
-
-            .thirdRow__center{
-                background-image: url(../img/liberta_w240_h240.jpg);
-            }
-
-            .thirdRow__right{
-                background-image: url(../img/okoto_w240_h240.jpg);
-            }
-
-            /*FORTH ROW*/
-            .forthRow__left{
-                background-image: url(../img/enlace_w240_h240.jpg);
-            }
-
-            .forthRow__center{
-                background-image: url(../img/sleep_w240_h240.jpg);
-            }
-
-            .forthRow__right{
-                background-image: url(../img/mano_w240_h240.jpg);
-            }
-
 
     @media(min-width: 768px){
         .fifthRow__large{
@@ -192,9 +128,14 @@
     }
 
         .information__container__contents__label{
-            width: 100px;
+            width: 150px;
             height: auto;
             border-bottom: dashed 0.5px #d9d9d9;
+            text-align: right;
+        }
+
+        .taoyaka__label__ver{
+            width: 100px;
         }
 
             .information__container__contents__label p, .information__container__contents__overview p{
@@ -202,17 +143,29 @@
                 font-optical-sizing: auto;
                 font-weight: 400;
                 font-style: normal;
-                font-size: 20px;
+                font-size: 16px;
             }
 
         .information__container__contents__overview{
-            width: 250px;
+            width: 200px;
             height: auto;
             border-bottom: dashed 0.5px #d9d9d9;
         }
 
+        .taoyaka__overview__ver{
+            width: 250px;
+        }
+
 
 @media(min-width: 768px){
+    .information__container__contents__label p, .information__container__contents__overview p{
+        font-size: 20px;
+    }
+
+    .information__container__contents__label{
+        width: 250px;
+    }
+
     .information__container__contents__overview{
         width: 100%;
     }
@@ -260,6 +213,22 @@
         height: auto;
     }
 
+        .recommend__container__contents__inner{
+            display: flex;
+            flex-direction: column;
+        }
+
+            .recommend__container__contents__inner p{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                margin-top: 10px;
+                line-height: 2rem;
+                display: inline-block;
+            }
+
         .recommend__container__contents p{
             font-family: "Noto Sans JP", sans-serif;
             font-optical-sizing: auto;
@@ -276,6 +245,10 @@
             }
 
 @media(min-width: 768px){
+    .recommend__container__contents__inner{
+        flex-direction: row;
+    }
+
     .recommend__container__contents{
         display: flex;
         flex-direction: column;

@@ -1,0 +1,64 @@
+/*TAOYAKA*/            
+/*FIRST ROW*/
+.firstRow__left{
+    background-image: url(../../img/kamosu_w240_h240.jpg);
+}
+
+.firstRow__center{
+    background-image: url(../../img/himari_w240_h240.jpg);
+}
+
+.firstRow__right{
+    background-image: url(../../img/bikotsu_w240_h240.jpg);
+}
+
+/*SECOND ROW*/
+.secondRow__left{
+    background-image: url(../../img/popo_w240_h240.jpg);
+}
+
+.secondRow__center{
+    display: grid;
+    place-items: center;
+    border: solid 0.5px #343434;
+}
+
+    .secondRow__center h1{
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 2rem;
+    }
+
+.secondRow__right{
+    background-image: url(../../img/hakoniwa_w240_h240.jpg);
+}
+
+/*THIRD ROW*/
+.thirdRow__left{
+    background-image: url(../../img/tenno_w240_h240.jpg);
+}
+
+.thirdRow__center{
+    background-image: url(../../img/liberta_w240_h240.jpg);
+}
+
+.thirdRow__right{
+    background-image: url(../../img/okoto_w240_h240.jpg);
+}
+
+/*FORTH ROW*/
+.forthRow__left{
+    background-image: url(../../img/enlace_w240_h240.jpg);
+}
+
+.forthRow__center{
+    background-image: url(../../img/sleep_w240_h240.jpg);
+}
+
+.forthRow__right{
+    background-image: url(../../img/mano_w240_h240.jpg);
+}
+

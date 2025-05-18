@@ -1,0 +1,65 @@
+/*YUI*/            
+/*FIRST ROW*/
+.firstRow__left{
+    background-image: url(../../img/yui/yui_fv_01.jpg);
+}
+
+.firstRow__center{
+    background-image: url(../../img/yui/yui_fv_02.jpg);
+}
+
+.firstRow__right{
+    background-image: url(../../img/yui/yui_fv_03.jpg);
+}
+
+/*SECOND ROW*/
+.secondRow__left{
+    background-image: url(../../img/yui/yui_fv_04.jpg);
+}
+
+.secondRow__center{
+    display: grid;
+    place-items: center;
+    border: solid 0.5px #343434;
+    border-radius: 10px;
+}
+
+    .secondRow__center h1{
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+.secondRow__right{
+    background-image: url(../../img/yui/yui_fv_08.jpg);
+}
+
+/*THIRD ROW*/
+.thirdRow__left{
+    background-image: url(../../img/yui/yui_stories_w400_h400.jpg);
+}
+
+.thirdRow__center{
+    background-image: url(../../img/yui/yui_feature_w400_h400.jpg);
+}
+
+.thirdRow__right{
+    background-image: url(../../img/yui/yui_dream_w400_h400.jpg);
+}
+
+/*FORTH ROW*/
+.forthRow__left{
+    background-image: url(../../img/yui/yui_fv_06.jpg);
+}
+
+.forthRow__center{
+    background-image: url(../../img/yui/yui_fv_07.jpg);
+}
+
+.forthRow__right{
+    background-image: url(../../img/yui/yui_fv_05.jpg);
+}
